@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Claudio Romano - BI Engineer, Data Analytics, Power BI, SQL and Data Engineering."
+    >
 
     <title>Claudio Romano | BI & Data</title>
 
@@ -10,6 +18,10 @@
 
         * {
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -24,12 +36,16 @@
             max-width: 1100px;
             margin: auto;
             padding: 60px 30px;
+
             display: grid;
             grid-template-columns: 280px 1fr;
             gap: 70px;
         }
 
-        /* LEFT SIDE */
+
+        /* =========================
+           LEFT COLUMN
+        ========================= */
 
         .profile {
             position: sticky;
@@ -40,22 +56,31 @@
         .profile-photo {
             width: 170px;
             height: 170px;
+
             border-radius: 50%;
+
             object-fit: cover;
-            background-color: #eeeeee;
+            object-position: center;
+
             margin-bottom: 25px;
+
+            border: 1px solid #eeeeee;
         }
 
         .profile h1 {
             font-size: 28px;
+            margin-top: 0;
             margin-bottom: 5px;
         }
 
         .profile h2 {
             font-size: 16px;
             font-weight: normal;
+
             color: #666666;
+
             margin-top: 0;
+            margin-bottom: 0;
         }
 
         .profile-links {
@@ -64,25 +89,39 @@
 
         .profile-links a {
             display: block;
+
             color: #333333;
+
             text-decoration: none;
+
             margin-bottom: 10px;
+
+            transition: 0.2s;
         }
 
         .profile-links a:hover {
-            text-decoration: underline;
+            color: #0066cc;
+            transform: translateX(3px);
         }
 
-        /* RIGHT SIDE */
+
+        /* =========================
+           RIGHT COLUMN
+        ========================= */
 
         main section {
             margin-bottom: 60px;
         }
 
         h2.section-title {
+
             font-size: 24px;
+
             border-bottom: 1px solid #dddddd;
+
             padding-bottom: 8px;
+
+            margin-top: 0;
             margin-bottom: 22px;
         }
 
@@ -99,21 +138,17 @@
             margin-bottom: 28px;
         }
 
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
 
-        .skill {
-            background-color: #f3f3f3;
-            padding: 7px 12px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
+        /* =========================
+           PROJECTS
+        ========================= */
 
         .project {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
+        }
+
+        .project h3 {
+            margin-bottom: 8px;
         }
 
         .project a {
@@ -125,21 +160,64 @@
             text-decoration: underline;
         }
 
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #f3f3f3;
+
+            padding: 7px 12px;
+
+            border-radius: 5px;
+
+            font-size: 14px;
+
+            transition: 0.2s;
+        }
+
+        .skill:hover {
+            background-color: #e8e8e8;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
         footer {
+
             margin-top: 60px;
+
             padding-top: 20px;
+
             border-top: 1px solid #eeeeee;
+
             color: #777777;
+
             font-size: 14px;
         }
 
-        /* MOBILE */
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 800px) {
 
             .container {
+
                 grid-template-columns: 1fr;
+
                 gap: 30px;
+
                 padding: 35px 20px;
             }
 
@@ -147,64 +225,111 @@
                 position: static;
             }
 
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+            }
+
         }
 
     </style>
+
 </head>
+
 
 <body>
 
+
 <div class="container">
 
-    <!-- LEFT COLUMN -->
+
+    <!-- =========================
+         LEFT COLUMN
+    ========================== -->
 
     <aside class="profile">
 
-        <div class="profile-photo"></div>
 
-        <h1>Claudio Romano</h1>
+        <img
+            src="yo.jpeg"
+            alt="Claudio Romano"
+            class="profile-photo"
+        >
+
+
+        <h1>
+            Claudio Romano
+        </h1>
+
 
         <h2>
             BI Engineer · Data Analytics · Power BI · SQL
         </h2>
 
+
         <div class="profile-links">
 
-            <a href="https://github.com/Claudio23x" target="_blank">
+
+            <a
+                href="https://github.com/Claudio23x"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 GitHub
             </a>
 
-            <a href="#" target="_blank">
+
+            <a
+                href="https://www.linkedin.com/in/claudio-romano-874918152/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 LinkedIn
             </a>
+
 
             <a href="#">
                 Download CV
             </a>
 
+
             <a href="#">
                 Email
             </a>
 
+
         </div>
+
 
     </aside>
 
 
-    <!-- RIGHT COLUMN -->
+
+    <!-- =========================
+         RIGHT COLUMN
+    ========================== -->
 
     <main>
 
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
         <section>
+
 
             <h2 class="section-title">
                 About Me
             </h2>
 
+
             <p>
                 BI Engineer and Data Analytics professional specialized in
                 Business Intelligence, data visualization and analytical solutions.
             </p>
+
 
             <p>
                 My main stack includes Power BI, SQL, DAX, Power Query and
@@ -212,23 +337,35 @@
                 Data Analytics, SQL and Power BI.
             </p>
 
+
             <p>
                 I am currently expanding my professional profile toward
                 Data Engineering, Microsoft Fabric, Cloud and Artificial Intelligence.
             </p>
 
+
         </section>
 
 
+
+        <!-- =========================
+             EXPERIENCE
+        ========================== -->
+
         <section>
+
 
             <h2 class="section-title">
                 Experience
             </h2>
 
+
+
             <div class="item">
 
-                <h3>BI Analyst</h3>
+                <h3>
+                    BI Analyst
+                </h3>
 
                 <p class="subtitle">
                     COREBI / YPF
@@ -242,29 +379,40 @@
             </div>
 
 
+
             <div class="item">
 
-                <h3>Data Analytics Instructor</h3>
+                <h3>
+                    Data Analytics Instructor
+                </h3>
 
                 <p class="subtitle">
                     Data Analytics · SQL · Power BI
                 </p>
 
                 <p>
-                    Teaching and mentoring students in data analytics,
+                    Teaching and mentoring students in Data Analytics,
                     SQL, Power BI and data visualization.
                 </p>
 
             </div>
 
+
         </section>
 
 
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
         <section>
+
 
             <h2 class="section-title">
                 Projects
             </h2>
+
 
 
             <div class="project">
@@ -286,6 +434,7 @@
             </div>
 
 
+
             <div class="project">
 
                 <h3>
@@ -303,6 +452,7 @@
                 </p>
 
             </div>
+
 
 
             <div class="project">
@@ -323,68 +473,146 @@
 
             </div>
 
+
         </section>
 
 
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
         <section>
+
 
             <h2 class="section-title">
                 Skills
             </h2>
 
+
             <div class="skills">
 
-                <span class="skill">Power BI</span>
-                <span class="skill">SQL</span>
-                <span class="skill">DAX</span>
-                <span class="skill">Power Query</span>
-                <span class="skill">Python</span>
-                <span class="skill">Microsoft Fabric</span>
-                <span class="skill">Azure</span>
-                <span class="skill">AWS</span>
-                <span class="skill">Databricks</span>
-                <span class="skill">Git</span>
-                <span class="skill">GitHub</span>
+
+                <span class="skill">
+                    Power BI
+                </span>
+
+
+                <span class="skill">
+                    SQL
+                </span>
+
+
+                <span class="skill">
+                    DAX
+                </span>
+
+
+                <span class="skill">
+                    Power Query
+                </span>
+
+
+                <span class="skill">
+                    Python
+                </span>
+
+
+                <span class="skill">
+                    Microsoft Fabric
+                </span>
+
+
+                <span class="skill">
+                    Azure
+                </span>
+
+
+                <span class="skill">
+                    AWS
+                </span>
+
+
+                <span class="skill">
+                    Databricks
+                </span>
+
+
+                <span class="skill">
+                    Git
+                </span>
+
+
+                <span class="skill">
+                    GitHub
+                </span>
+
 
             </div>
+
 
         </section>
 
 
+
+        <!-- =========================
+             CERTIFICATIONS
+        ========================== -->
+
         <section>
+
 
             <h2 class="section-title">
                 Certifications
             </h2>
 
+
             <div class="item">
 
+
                 <h3>
-                    Microsoft Certified: Power BI Data Analyst Associate
+                    Microsoft Certified:
+                    Power BI Data Analyst Associate
                 </h3>
+
 
                 <p class="subtitle">
                     PL-300
                 </p>
 
+
             </div>
+
 
         </section>
 
 
+
+        <!-- =========================
+             CURRENTLY LEARNING
+        ========================== -->
+
         <section>
+
 
             <h2 class="section-title">
                 Currently Learning
             </h2>
 
+
             <p>
-                Data Engineering · Artificial Intelligence · Microsoft Fabric ·
-                AWS · Advanced SQL
+                Data Engineering · Artificial Intelligence ·
+                Microsoft Fabric · AWS · Advanced SQL
             </p>
+
 
         </section>
 
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
 
         <footer>
 
@@ -392,9 +620,12 @@
 
         </footer>
 
+
     </main>
 
+
 </div>
+
 
 </body>
 
